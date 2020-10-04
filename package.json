@@ -1,0 +1,20 @@
+{
+    "name": "source-insight-keymap",
+    "displayName": "Source Insight Keymap",
+    "description": "Source Insight keymap for VS Code",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.6.0"
+    },
+    "categories": [
+        "Keymaps"
+    ],
+    "contributes": {
+        "keybindings": [
+            {
+                "key": "ctrl+.",
+                "command": "workbench.action.showCommands"
+            }
+        ]
+    }
+}
