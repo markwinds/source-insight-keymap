@@ -3,17 +3,100 @@
     "displayName": "Source Insight Keymap",
     "description": "Source Insight keymap for VS Code",
     "version": "0.0.1",
+    "publisher": "markwinds",
     "engines": {
         "vscode": "^1.6.0"
     },
     "categories": [
         "Keymaps"
     ],
+    "keywords": [
+        "keymap"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/markwinds/source-insight-keymap.git"
+    },
+    "bugs": {
+        "url": "https://github.com/markwinds/source-insight-keymap/issues"
+    },
+    "preview": true,
+    "icon": "sourceinsight-keymap.png",
     "contributes": {
         "keybindings": [
             {
-                "key": "ctrl+.",
-                "command": "workbench.action.showCommands"
+                "key": "ctrl+oem_plus",
+                "command": "editor.action.revealDefinition",
+                "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+            },
+            {
+                "key": "f12",
+                "command": "-editor.action.revealDefinition",
+                "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+            },
+            {
+                "key": "f4",
+                "command": "editor.action.nextMatchFindAction",
+                "when": "editorFocus"
+            },
+            {
+                "key": "f3",
+                "command": "-editor.action.nextMatchFindAction",
+                "when": "editorFocus"
+            },
+            {
+                "key": "f3",
+                "command": "editor.action.previousMatchFindAction",
+                "when": "editorFocus"
+            },
+            {
+                "key": "shift+f3",
+                "command": "-editor.action.previousMatchFindAction",
+                "when": "editorFocus"
+            },
+            {
+                "key": "alt+oem_comma",
+                "command": "workbench.action.navigateBack"
+            },
+            {
+                "key": "alt+left",
+                "command": "-workbench.action.navigateBack"
+            },
+            {
+                "key": "alt+oem_period",
+                "command": "workbench.action.navigateForward"
+            },
+            {
+                "key": "alt+right",
+                "command": "-workbench.action.navigateForward"
+            },
+            {
+                "key": "ctrl+oem_minus",
+                "command": "editor.action.smartSelect.expand",
+                "when": "editorTextFocus"
+            },
+            {
+                "key": "shift+alt+right",
+                "command": "-editor.action.smartSelect.expand",
+                "when": "editorTextFocus"
+            },
+            {
+                "key": "ctrl+alt+c",
+                "command": "editor.action.goToReferences",
+                "when": "editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
+            },
+            {
+                "key": "shift+f12",
+                "command": "-editor.action.goToReferences",
+                "when": "editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
+            },
+            {
+                "key": "ctrl+shift+w",
+                "command": "workbench.action.closeAllEditors"
+            },
+            {
+                "key": "ctrl+k ctrl+w",
+                "command": "-workbench.action.closeAllEditors"
             }
         ]
     }
