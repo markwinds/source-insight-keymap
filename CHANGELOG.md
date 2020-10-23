@@ -1,9 +1,17 @@
-# Change Log
+# 更改记录
 
-All notable changes to the "source-insight-keymap" extension will be documented in this file.
+## V0.0.1
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+- 定义了常用的几个快捷键
 
-## [Unreleased]
+## V0.0.2
 
-- Initial release
+- 对照SourceInsight配置文档中的常用快捷键列表添加新的快捷键
+- 修改之前跳转到代码定义和声明的错误
+
+## V0.1.0
+
+- 修改日志文件的错误
+- 修改为全局symbol搜索
+
+

@@ -2,7 +2,7 @@
     "name": "source-insight-keymap",
     "displayName": "Source Insight Keymap",
     "description": "Source Insight keymap for VS Code",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "publisher": "markwinds",
     "engines": {
         "vscode": "^1.6.0"
@@ -81,22 +81,57 @@
                 "when": "editorTextFocus"
             },
             {
-                "key": "ctrl+alt+c",
-                "command": "editor.action.goToReferences",
-                "when": "editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
-            },
-            {
-                "key": "shift+f12",
-                "command": "-editor.action.goToReferences",
-                "when": "editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
-            },
-            {
                 "key": "ctrl+shift+w",
                 "command": "workbench.action.closeAllEditors"
             },
             {
                 "key": "ctrl+k ctrl+w",
                 "command": "-workbench.action.closeAllEditors"
+            },
+            {
+                "key": "ctrl+alt+c",
+                "command": "editor.action.revealDeclaration"
+            },
+            {
+                "key": "ctrl+0",
+                "command": "workbench.action.quickOpen"
+            },
+            {
+                "key": "ctrl+p",
+                "command": "-workbench.action.quickOpen"
+            },
+            {
+                "key": "ctrl+0",
+                "command": "workbench.action.quickOpenNavigateNextInFilePicker",
+                "when": "inFilesPicker && inQuickOpen"
+            },
+            {
+                "key": "ctrl+p",
+                "command": "-workbench.action.quickOpenNavigateNextInFilePicker",
+                "when": "inFilesPicker && inQuickOpen"
+            },
+            {
+                "key": "f7",
+                "command": "workbench.action.showAllSymbols"
+            },
+            {
+                "key": "ctrl+t",
+                "command": "-workbench.action.showAllSymbols"
+            },
+            {
+                "key": "ctrl+1",
+                "command": "editor.action.blockComment",
+                "when": "editorTextFocus && !editorReadonly"
+            },
+            {
+                "key": "ctrl+2",
+                "command": "editor.action.blockComment",
+                "when": "editorTextFocus && !editorReadonly"
+            },
+            {
+                "key": "ctrl+shift+a",
+                "command": "-editor.action.blockComment",
+                "when": "editorTextFocus && !editorReadonly"
             }
         ]
     }

@@ -20,7 +20,7 @@ Find next|F4|F3|editor.action.nextMatchFindAction|editorFocus
 Navigate back|alt+,|alt+left|workbench.action.navigateBack|
 Navigate forward|alt+.|alt+right|workbench.action.navigateForward|
 Expand selection|ctrl+-|alt+shift+right|editor.action.smartSelect.expand|editorTextFocus
-Go to reference|ctrl+alt+c|shift+F12|editor.action.goToReferences|editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor
+Go to Declaration|ctrl+alt+c|null|editor.action.goToReferences|editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor
 Close all file|ctrl+shift+w|ctrl+k ctrl+w|workbench.action.closeAllEditors
 
 ## 待完成的功能
